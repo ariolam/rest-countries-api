@@ -1,12 +1,15 @@
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import Country from "./Country";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header bg-white h-14 shadow-sm">
-        <h1 className="font-extrabold text-xl mx-11 absolute mt-2.5">Where in the world ?</h1>
+        <h1 className="font-extrabold text-xl mx-11 absolute mt-2.5">
+          Where in the world ?
+        </h1>
       </header>
       <main className="mx-12 my-6">
         <div className="app-input flex flex-row justify-between">
@@ -30,7 +33,9 @@ function App() {
             />
           </form>
         </div>
-        <div className="app-results"></div>
+        <div className="app-results">
+          <Country />
+        </div>
       </main>
     </div>
   );
